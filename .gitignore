@@ -1,0 +1,4 @@
+.idea
+vendor
+!public/assets/vendor
+config/db.php

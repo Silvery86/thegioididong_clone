@@ -1,0 +1,15 @@
+Options +FollowSymlinks -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^login/(.*) /login [R=301,NC,L]
+
+ErrorDocument 400 /_error.php
+ErrorDocument 403 /_error.php
+ErrorDocument 404 /_error.php
+ErrorDocument 500 /_error.php
+ErrorDocument 503 /_error.php

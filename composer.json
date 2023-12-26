@@ -1,0 +1,45 @@
+{
+	"name" : "corefuse/blue-dashboard",
+	"authors" : [
+		{
+			"name" : "Im A Feature",
+			"email" : "im.not.a.bug.173@gmail.com"
+		}
+	],
+	"description" : "A dashboard that handles the business process of A-Blue Company\n\n",
+	"keywords" : [
+		"php",
+		"corefuse",
+		"blue-dashboard"
+	],
+	"type" : "project",
+	"license" : [
+		"MIT"
+	],
+	"autoload" : {
+		"psr-4" : {
+			"app\\" : "."
+		}
+	},
+	"require" : {
+		"php" : "^8.1",
+		"ext-pdo" : "*",
+		"ext-json" : "*",
+		"ext-fileinfo" : "*",
+		"voku/anti-xss" : "^4.1",
+		"ext-curl" : "*",
+		"ext-exif" : "*",
+		"ext-gd" : "*",
+		"ext-iconv" : "*",
+		"ext-imagick" : "*",
+		"ext-intl" : "*",
+		"ext-mbstring" : "*",
+		"ext-zlib" : "*",
+		"setasign/fpdf" : "^1.8",
+		"ozdemir/datatables" : "2.*",
+		"phpoffice/phppresentation" : "dev-master",
+		"phpoffice/phpspreadsheet" : "^1.29",
+		"phpoffice/phpword" : "^1.1",
+		"predis/predis" : "^2.2"
+	}
+}

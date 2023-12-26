@@ -1,0 +1,76 @@
+.modal-lg {
+    --bs-modal-width: 80% !important;
+}
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    stroke-dasharray: 10 500;
+    stroke-alignment: inner;
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-duration: 1.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running;
+    transform-origin: center center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.stroke-spacing {
+    animation-name: stroke-spacing;
+    animation-duration: 6.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transform-origin: center center;
+}
+
+@keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 500;
+    }
+    90% {
+        stroke-dasharray: 330 500;
+    }
+    100%  {
+        stroke-dasharray: 330 500;
+    }
+}
+
+button {
+    margin-top: 20vh;
+    background: rgb(0,200,240);
+    opacity: .5;
+    padding: 1em 2em;
+    border-radius: 1em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .05em;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1;
+}
